@@ -361,3 +361,6 @@ a{
     top: 25px;
     right: 52px;
 }
+.jumbotron > img {
+    width: 20px
+}
