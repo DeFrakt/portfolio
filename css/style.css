@@ -226,9 +226,9 @@ filter: none;
 }
 .contact_imgs{
     width: 50px;
-    padding: 0 0 0 23px;
-    margin: 94px 0 0 1px;
-    z-index: 2;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    
 } 
 .lang_imgs{
     width: 66px;
@@ -353,11 +353,6 @@ a{
     font-family: "Georgia", "Helvitica", "Times New Roman";
     font-size: 39px;
     display: inline-block;
-    position: absolute;
-    /* top: 55px;
-    right: 73px; */
-    top: 25px;
-    right: 52px;
 }
 #profile_pic {
     width:280px;
@@ -370,14 +365,23 @@ a{
 @media (min-width: 576px) {
     #banner_text{
         margin: 0 0 0 0;
-        padding: 0 0 0 10;
+        padding: 0 0 0 10px;
+        display: inline-block;
+        font-size: 10px ;
+    }
+    #banner_images{
+        margin: 0 0 0 0;
+        padding: 0 0 0 10px;
         display: inline-block;
     }
   }
   
   @media (min-width: 768px) {
     #banner_text{
-        margin: 0 0 0 0;
+        display: none;
+    }
+    #banner_images{
+        margin: 5px 0 0 27px;
         padding: 0 0 0 0;
         display: inline-block;
         position: absolute;
@@ -387,7 +391,14 @@ a{
   @media (min-width: 992px) {
     #banner_text{
         margin: 0 0 0 0;
-        padding: 5px 0 0 40px;
+        padding: 0px 7px 0px 15px;
+        display: inline-block;
+        position: absolute;
+        font-size: 28px;
+    }
+    #banner_images{
+        margin: 50px 0 0 0;
+        padding: 10px 105px 0 40px;
         display: inline-block;
         position: absolute;
     }
@@ -396,7 +407,14 @@ a{
   @media (min-width: 1200px) {
     #banner_text{
         margin: 0 0 0 0;
-        padding: 5px 0 0 40px;
+        padding: 0 0 0 79px;
+        display: inline-block;
+        position: absolute;
+        font-size: 28px;
+    }
+    #banner_images{
+        margin: 50px 0 0 0;
+        padding: 5px 140px 0 40px;
         display: inline-block;
         position: absolute;
     }
