@@ -33,7 +33,7 @@
             <a class="nav-link" href="#">Full Stack Developer<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#portfolio-section">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
@@ -43,7 +43,6 @@
     </nav>
 
     <main role="main">
-      <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron jumbo-bg">
         <div class="container">
           <img src="./images/sy_square.jpg" id="profile_pic">
@@ -77,17 +76,16 @@
         </div>
       </div>
 
-      <div class="container">
-        <!-- Example row of columns -->
+      <div id="portfolio-section" class="container">
         <div class="row">
         <div class="col-md-4 center-content">
             <h1>Idiot's Delight</h1>
-            <h5>Java | Spring | Apache </h5>
-            <p>Solitare game. Built with a Java API backend, formated to run on multiple devices, soon to be an android game. Card deck built with OOP principles, formated with JSON style data for cross-platform and asynchronous playing. </p>
+            <h5>Java | Spring | MySQL</h5>
+            <p>Solitare game. Built with a Java API backend, formated to run on multiple devices, soon to be an android game. Card deck built with OOP principles, formated with JSON style data for cross-platform and asynchronous playing. MySQL database for tracking game play statistics.</p>
               <img class="project-img" src="./images/idiots_delight.png" alt="Beat Exchange">
             <h2>
-              <a class="btn btn-outline-primary" href="#" role="button">Demo</a>
-              <a class="btn btn-outline-primary" href="#" role="button">Git</a>
+              <a class="btn btn-outline-primary" href="http://18.224.37.108/" target="_blank" role="button">Demo</a>
+              <a class="btn btn-outline-primary" href="https://github.com/DeFrakt/acesup" target="_blank" role="button">Git</a>
             </h2> 
             <BR>
           </div>
@@ -97,27 +95,25 @@
             <p>Music & Audio File Management. Built for the artist wanting to manage and transfer audio tracks with clients. Stripe & PayPal API will be intergrated for future payment methods. </p>
               <img class="project-img" src="./images/beat_exchange.png" alt="Beat Exchange">
               <h2>
-                <a class="btn btn-outline-primary" href="#" role="button">Demo</a>
-                <a class="btn btn-outline-primary" href="#" role="button">Git</a>
+                <a id="project1" class="btn btn-outline-primary" href="#portfolio-section" role="button">Demo</a>
+                <a class="btn btn-outline-primary" href="https://github.com/DeFrakt/BeatExchange" target="_blank" role="button">Git</a>
               </h2> 
           </div>
           <div class="col-md-4 center-content">
             <h1>Food Review</h1>
             <h5>MongoDB | Express</h5>
             <h5>Angular | Node.js</h5>
-            <p>Food review database. Rate restaurants around your area. Front-end built in Angular.</p>
+            <p>Built in the javascript MEAN stack, Let's Eat, is a Food review database. Rate restaurants around your area. Front-end built in Angular.</p>
               <img class="project-img" src="./images/food_review.png" alt="Beat Exchange">
               <h2>
-                <a class="btn btn-outline-primary" href="#" role="button">Demo</a>
-                <a class="btn btn-outline-primary" href="#" role="button">Git</a>
+                <a id="project3" class="btn btn-outline-primary" href="#portfolio-section" role="button">Demo</a>
+                <a class="btn btn-outline-primary" href="https://github.com/DeFrakt/FoodExchange" target="_blank" role="button">Git</a>
               </h2> 
             <BR>
           </div>
         </div>
         <hr>
-
-      </div> <!-- /container -->
-
+      </div>
     </main>
 
     <footer class="container">
@@ -129,6 +125,57 @@
         <a href="https://github.com/DeFrakt" target="_blank"><img src="./images/github_transparent.png" alt="github" class="contact_imgs"></a>
     </footer>
 
+    <!-- Email  -->
+    <div id="emailModal">    
+      <!-- Email Modal content -->
+          <div id="modal-content-email">
+              <div class="modal-header">
+                  <span class="emailClose close">&times;</span>
+                  <h2>Email</h2>
+              </div>
+              <div class="modal-body">
+                  syaussi@gmail.com
+              </div>
+          </div>
+      </div>
+      <!-- Resume Modal -->
+      <div id="resumeModal">    
+      <!-- Resume Modal content -->
+          <div id="modal-content-resume">
+              <div class="modal-header">
+                  <span class="resumeClose close">&times;</span>
+                  <h2>Resume | <a href="images/StevenYaussi_FullStackDeveloper.pdf">download</a></h2>  
+              </div>
+              <div class="modal-body">
+                  <embed src="images/StevenYaussi_FullStackDeveloper.pdf" width="600px" height="550px" />
+              </div>
+          </div>
+      </div>
+      <!-- Beat Exchange Modal -->
+      <div id="beatModal">    
+          <!-- Beat Modal content -->
+          <div id="modal-content-beat">
+              <div class="modal-header">
+                  <span class="project1Close close">&times;</span>
+                  <h2>Beat Exchange</h2>  
+              </div>
+              <div class="modal-body-video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/w6RdHs7-qzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+          </div>
+      </div>
+      <!-- Foodie Modal -->
+      <div id="foodieModal">    
+      <!-- Foodie Modal content -->
+          <div id="modal-content-foodie">
+              <div class="modal-header">
+                  <span class="project3Close close">&times;</span>
+                  <h2>Let's Eat - Foodie Review</h2>  
+              </div>
+              <div class="modal-body-video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/iweM-C8dViw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -136,5 +183,7 @@
     <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Model Js -->
+    <script type="text/javascript" src="js/modal.js"></script>
   </body>
 </html>

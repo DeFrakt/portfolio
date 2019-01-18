@@ -1,4 +1,4 @@
-// Get the modal
+    // Get the modal
 var emailModal = document.getElementById('emailModal');
 var resumeModal = document.getElementById('resumeModal');
 var beatModal = document.getElementById('beatModal');
