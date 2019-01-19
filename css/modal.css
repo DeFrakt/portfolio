@@ -16,7 +16,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 2; /* Sit on top */
-    padding-top: 8px; /* Location of the box */
+    padding-top: 72px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -50,8 +50,8 @@
     border-radius: 15px;
     border: black 4px solid;
     width: 628px;
-    height: 650px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    height: 550px;
+    box-shadow: 0 4px 8px 0 rgba(219, 77, 77, 0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -62,7 +62,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 2; /* Sit on top */
-    padding-top: 8px; /* Location of the box */
+    padding-top: 90px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -75,7 +75,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 2; /* Sit on top */
-    padding-top: 8px; /* Location of the box */
+    padding-top: 90px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -130,21 +130,21 @@
 }
 
 /* The Close Button */
-.close {
+.close_modal {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close_modal:hover,
+.close_modal:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
 
-.modal-header {
+.m-header {
     padding: 2px 16px;
     background-color: #1d60af;
     color: white;
@@ -161,4 +161,13 @@
     padding: 33px;
     font-family: "Georgia", "Helvitica", "Times New Roman";
     font-size: 30px;
+}
+.m-header > h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
