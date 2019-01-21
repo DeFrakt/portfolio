@@ -3,16 +3,19 @@ var emailModal = document.getElementById('emailModal');
 var resumeModal = document.getElementById('resumeModal');
 var beatModal = document.getElementById('beatModal');
 var foodieModal = document.getElementById('foodieModal');
+var wildflourModal = document.getElementById('wildflourModal');
 // Get the button that opens the modal
 var emailBtn = document.getElementById("emailBtn");
 var resumeBtn = document.getElementById("resumeBtn");
 var project1Btn = document.getElementById("project1");
 var project3Btn = document.getElementById("project3");
+var project4Btn = document.getElementById("project4");
 // Get the <span> element that closes the modal
 var emailSpan = document.getElementsByClassName("emailClose")[0];
 var resumeSpan = document.getElementsByClassName("resumeClose")[0];
 var project1Span = document.getElementsByClassName("project1Close")[0];
 var project3Span = document.getElementsByClassName("project3Close")[0];
+var project4Span = document.getElementsByClassName("project4Close")[0];
 // EMAIL
 // When the user clicks the button, open the modal 
 emailBtn.onclick = function() {
@@ -22,6 +25,16 @@ emailBtn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 emailSpan.onclick = function() {
     emailModal.style.display = "none";
+}
+// WildFlour
+// When the user clicks the button, open the modal 
+project4Btn.onclick = function() {
+    wildflourModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+project4Span.onclick = function() {
+    wildflourModal.style.display = "none";
 }
 // RESUME
 // When the user clicks the button, open the modal 
@@ -67,6 +80,9 @@ window.onclick = function(event) {
     }
     if (event.target == foodieModal) {
         foodieModal.style.display = "none";
+    }
+    if (event.target == wildflourModal) {
+        wildflourModal.style.display = "none";
     }
 }
 
