@@ -279,7 +279,10 @@ a{
       box-shadow: 0px 0px 0px #000000
   }
   .section-header{
-      background: linear-gradient(#e66465, #9198e5);
-      border-bottom: solid #102d79 4px;
-      color: white;
+      background: linear-gradient(#000000 10%, white );
+      border-top: solid #102d79 4px;
+      color: black;
+      size: 30px;
+      padding: 5px;
+      font-size: 50px;
   }
