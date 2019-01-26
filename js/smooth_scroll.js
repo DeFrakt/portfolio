@@ -21,7 +21,6 @@ $('a[href*="#"]')
         $('html, body').animate({
           scrollTop: target.offset().top - 56
         }, 1000, function() {
-          console.log("len", target.offset().top);
           // Callback after animation
           // Must change focus!
           var $target = $(target);
