@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Full Stack Developer</a>
+            <a class="nav-link" href="#top">Full Stack Developer</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#portfolio-section">Portfolio</a>
@@ -43,7 +43,7 @@
     </nav>
 
     <main role="main">
-      <div class="jumbotron jumbo-bg">
+      <div class="jumbotron jumbo-bg" id="top">
         <div class="container">
           <img src="./images/sy_square.jpg" id="profile_pic">
           <span id="banner_text">Languages &#183; Frameworks &#183; Servers &#183; Databases &#183; Design</span>
@@ -75,8 +75,8 @@
           </p>
         </div>
       </div>
-      <div class="container-fluid center-content section-header">Portfolio</div>
-      <div id="portfolio-section" class="container">
+      <div id="portfolio-section" class="container-fluid center-content section-header">Portfolio</div>
+      <div class="container">
         <div class="row">
         <div class="col-md-4 center-content">
             <h1>Idiot's Delight</h1>
@@ -116,7 +116,7 @@
           <div class="col-md-4 center-content">
               <h1>Wild Flour</h1>
               <h5>Python | Django | MySQL</h5>
-              <p>Wild Flour is an online bakery made for a client. Stripe API used for transactions and online purchases. Admin back panel for updating items on a rotating menu. Responsive design with Bootstrap.</p>
+              <p>Wild Flour is an online bakery made for a client. Square API used for transactions and online purchases. Admin back panel for updating items on a rotating menu. Responsive design with Bootstrap.</p>
               <a href="http://projects.stevenyaussi.com/wildflour/index.html" target="_blank">
                 <img class="project-img" src="./images/wildflour.jpg" alt="Wild Flour"></a>
               <h2>
@@ -128,8 +128,8 @@
       </div>
     </main>
 
-    <div class="container-fluid center-content section-header">Contact</div>
-    <main id="contact" class="container">
+    <div id="contact" class="container-fluid center-content section-header">Contact</div>
+    <main class="container">
       <div class="row">
         <div class="col-md-4 center-content" id="pic">
             <a href="https://soundcloud.com/steven-yaussi" target="_blank"><img src="images/EMWD.jpg" alt="Electro Magnetic Water Droplets"></a>
@@ -206,11 +206,14 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script> -->
+    <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Model Js -->
     <script type="text/javascript" src="js/modal.js"></script>
+    <!-- Smooth Scrolling-->
+    <script type="text/javascript" src="js/smooth_scroll.js"></script>
   </body>
 </html>
