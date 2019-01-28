@@ -147,7 +147,7 @@ filter: none;
     box-shadow: 10px 10px 30px grey;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
     #banner_text{
         margin: 0 0 0 0;
         padding: 0 0 0 10px;
@@ -205,7 +205,7 @@ filter: none;
         display: inline-block;
         position: absolute;
     }
-  }
+  } */
   #foot{
       border-top: solid #102d79 4px;
       background-color: black;
@@ -219,4 +219,5 @@ filter: none;
     padding-bottom: 2px;
     font-size: 50px;
     margin-bottom: 2rem;  
+    box-shadow: 0px 4px 28px #00000082;
   }
