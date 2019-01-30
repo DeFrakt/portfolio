@@ -7,7 +7,9 @@ var foodieModal = document.getElementById('foodieModal');
 var emailBtn = document.getElementById("emailBtn");
 var resumeBtn = document.getElementById("resumeBtn");
 var project1Btn = document.getElementById("project1");
+var project2Btn = document.getElementById("project2");
 var project3Btn = document.getElementById("project3");
+var project4Btn = document.getElementById("project4");
 // Get the <span> element that closes the modal
 var emailSpan = document.getElementsByClassName("emailClose")[0];
 var resumeSpan = document.getElementsByClassName("resumeClose")[0];
@@ -38,6 +40,9 @@ resumeSpan.onclick = function() {
 project1Btn.onclick = function() {
     beatModal.style.display = "block";
 }
+project2Btn.onclick = function() {
+    beatModal.style.display = "block";
+}
 
 // When the user clicks on <span> (x), close the modal
 project1Span.onclick = function() {
@@ -46,6 +51,9 @@ project1Span.onclick = function() {
 // FOODIE
 // When the user clicks the button, open the modal 
 project3Btn.onclick = function() {
+    foodieModal.style.display = "block";
+}
+project4Btn.onclick = function() {
     foodieModal.style.display = "block";
 }
 
